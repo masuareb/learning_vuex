@@ -10,24 +10,14 @@
 
 <script>
 import EventCard from "@/components/EventCard";
-import EventService from "@/services/EventService";
+import { mapState } from 'vuex'
 export default {
   components: {
     EventCard
   },
-  data() {
-    return {
-      events: []
-    }
-  },
+  computed: mapState(['events']),
   created() {
-    EventService.getEvents()
-      .then(response => {
-        this.events = response.data
-      })
-      .catch(error => {
-        console.og('There was an error:', error.response)
-      })
+    this.$store.dispatch('fetchEvents')
   }
 }
 </script>
