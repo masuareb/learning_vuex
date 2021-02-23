@@ -7,6 +7,11 @@
 <script>
 import { mapState } from 'vuex'
 export default {
-  computed: mapState(['categories', 'user'])
+  computed: {
+    catLength() {
+      return this.$store.getters.catLength
+    },
+    ...mapState(['categories', 'user'])
+  }
 }
 </script>
