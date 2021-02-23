@@ -71,6 +71,34 @@
           "name": "Mary Gordon"
         }
       ]
+    },
+    {
+      "id": 9332747,
+      "category": "sustainability",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "title": "Test event",
+      "description": "Description",
+      "location": "Location",
+      "date": "2021-02-06T03:12:00.000Z",
+      "time": "19:00",
+      "attendees": []
+    },
+    {
+      "id": 5241095,
+      "category": "animal welfare",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "title": "Event 2",
+      "description": "Description",
+      "location": "Location",
+      "date": "2021-02-20T03:16:00.000Z",
+      "time": "18:00",
+      "attendees": []
     }
   ]
 }
