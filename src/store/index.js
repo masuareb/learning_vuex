@@ -8,9 +8,12 @@ export default new Vuex.Store({
     user: { id: 'abc123', name: 'Adam Jahr'},
     categories: ['sustainability', 'nature', 'animal welfare', 'housing', 'education', 'food', 'community']
   },
-  mutations: {
+  getters: {
     catLength: state => {
       return state.categories.length
+    },
+    getEventById: (state) => (id) => {
+      return state.events.find(event => event.id === id)
     }
   },
   actions: {},
