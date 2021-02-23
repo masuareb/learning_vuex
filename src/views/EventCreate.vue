@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Create Event</h1>
-    <form>
+    <form @submit.prevent="createEvent">
       <label>Select a category</label>
       <select v-model="event.category">
         <option v-for="cat in categories" :key="cat">{{ cat }}</option>
@@ -67,7 +67,11 @@ export default {
         time: '',
         attendees: []
       }
-    }
+    },
+    createEvent() {
+      this.$store.dispatch('createEvent', this.event)
+      this.event = this.createFreshEvent()
+    },
   }
 }
 </script>
