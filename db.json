@@ -99,6 +99,20 @@
       "date": "2021-02-20T03:16:00.000Z",
       "time": "18:00",
       "attendees": []
+    },
+    {
+      "id": 6981019,
+      "category": "food",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "title": "Event 3",
+      "description": "Description",
+      "location": "Location",
+      "date": "2021-02-14T03:18:00.000Z",
+      "time": "15:00",
+      "attendees": []
     }
   ]
 }
